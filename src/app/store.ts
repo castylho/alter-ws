@@ -1,11 +1,11 @@
-import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import counterReducer from "../features/counter/counterSlice";
+import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit";
+import graphReducer from "../features/graph/graphSlice";
 import snackbarReducer from "../features/snackbar/snackbarSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
     snackbar: snackbarReducer,
+    graph: graphReducer,
   },
 });
 

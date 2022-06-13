@@ -19,10 +19,10 @@ export const snackbarSlice = createSlice({
   initialState,
   reducers: {
     updateSnackbar: (state, action: PayloadAction<SnackbarState>) => {
-        state.isOpen = action.payload.isOpen
-        state.message = action.payload.message
-        state.severity = action.payload.severity
-    }
+      state.isOpen = action.payload.isOpen;
+      state.message = action.payload.message;
+      state.severity = action.payload.severity;
+    },
   },
 });
 
